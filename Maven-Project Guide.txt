@@ -1,0 +1,52 @@
+# How to create a Maven-Project =>
+  
+  Step 1-> Go to file, new and then click on maven project, click on next.
+
+  Step 2-> Set catalog to internal and set maven-archtype-webapp 1.0, click on next.
+
+  Step 3-> Give your package a name in Group-id and name your project in Architect id, click finish.
+
+=========================================================================================================
+
+# Add dependencies in pom.xml file
+
+  1) log4j
+  2) mysql
+  3) c3po
+  4)javax.servlet
+
+# Also add properties in pom.xml
+
+  1) <maven.compiler.target>11</maven.compiler.target>	
+  2) <maven.compiler.source>11</maven.compiler.source>
+
+=========================================================================================================
+
+# Create packages 
+
+  * Java Resources -> src/main/java
+
+  1) in.co.rays.proj4.bean
+  2) in.co.rays.proj4.model
+  3) in.co.rays.proj4.controller
+  4) in.co.rays.proj4.util
+  5) in.co.rays.proj4.test
+
+=========================================================================================================
+
+# Create properties file 
+
+  * Java Resources -> src/main/resources
+
+  1) in.co.rays.proj4.bundle ( file name - system.properties )
+
+=========================================================================================================
+
+# Create folder 
+
+  * src -> main -> webapp
+
+  1) image
+  2) jsp
+
+=========================================================================================================
