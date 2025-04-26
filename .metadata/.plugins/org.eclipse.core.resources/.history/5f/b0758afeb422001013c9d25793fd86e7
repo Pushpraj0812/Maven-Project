@@ -1,0 +1,8 @@
+package exception;
+
+public class RecordNotFound extends Exception{
+	
+	public RecordNotFound(String msg) {
+		super(msg);
+	}
+}
