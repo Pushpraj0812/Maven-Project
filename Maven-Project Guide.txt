@@ -31,6 +31,7 @@
   3) in.co.rays.proj4.controller
   4) in.co.rays.proj4.util
   5) in.co.rays.proj4.test
+  6) in.co.rays.proj4.exception
 
 =========================================================================================================
 
@@ -50,3 +51,31 @@
   2) jsp
 
 =========================================================================================================
+
+# Design patter used in project-04
+
+1. Singleton design pattern used in JDBCDataSource ( advance java Data base connection topic )
+
+2. Factory design pattern 
+
+3. Builder design pattern
+
+4. Front controller design pattern
+
+=========================================================================================================
+
+# Create classes in packages
+
+  => Create JDBCDataSource class in in.co.rays.proj4.util package.
+  => exception
+     -> ApplicationException
+     -> DatabaseException
+     -> DuplicaterecordException
+     -> RecordNotFoundException
+
+  => Create bean classes for all database. ( create a class that contain common column name) .
+  => Create model classes for all database.
+  => Create testmodel classes for all database.
+
+=========================================================================================================
+
