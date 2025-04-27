@@ -10,4 +10,14 @@
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="exception.ApplicationException"/>
     <fullyQualifiedTypeName name="in.co.rays.proj4.bean.BaseBean"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.RoleModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.UserModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.CollageModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.CollegeModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.StudentModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.MarksheetModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.CourseModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.SubjectModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.TimeTableModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.FacultyModel"/>
 </qualifiedTypeNameHistroy>
