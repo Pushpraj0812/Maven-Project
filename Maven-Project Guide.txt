@@ -1,4 +1,4 @@
-# How to create a Maven-Project =>
+# How to create a Maven-Project => ( Require internet connectivity for Maven project )
   
   Step 1-> Go to file, new and then click on maven project, click on next.
 
@@ -8,18 +8,45 @@
 
 =========================================================================================================
 
-# Add dependencies in pom.xml file
+# Add dependencies in pom.xml file ( pom = project object model )
 
-  1) log4j
-  2) mysql
-  3) c3po
-  4)javax.servlet
+  1) log4j 
+  2) mysql for JDBC ( mysql connector in maven repository website )
+  3) c3po for JDBC data source
+  4) javax.servlet for servlet 
 
-# Also add properties in pom.xml
+  * you can find required dependencies on mavenrepository website 
+
+# Also add properties in pom.xml ( to get our maven project to run on java version 11 )
 
   1) <maven.compiler.target>11</maven.compiler.target>	
   2) <maven.compiler.source>11</maven.compiler.source>
 
+=========================================================================================================
+
+# update the project
+ 
+  right click -> maven -> update project -> force update -> ok
+
+# goto build path -> configure build path -> libraries -> double click on ( JRE System libraries ) -> 
+  workspace default
+
+=========================================================================================================
+
+# welcome file
+
+ In web.xml add welcome file ( index.jsp )
+ *
+  <welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+ *
+
+=========================================================================================================
+
+# Add server in your project
+
+  Right click on project -> run as server -> browse for server ( location for your server ) -> select your server -> click finish 
 =========================================================================================================
 
 # Create packages 
@@ -67,13 +94,14 @@
 # Create classes in packages
 
   => Create JDBCDataSource class in in.co.rays.proj4.util package.
+
   => exception
      -> ApplicationException
      -> DatabaseException
      -> DuplicaterecordException
      -> RecordNotFoundException
 
-  => Create bean classes for all database. ( create a class that contain common column name) .
+  => Create bean classes for all database. ( create a class that contain common column name ) .
   => Create model classes for all database.
   => Create testmodel classes for all database.
 
