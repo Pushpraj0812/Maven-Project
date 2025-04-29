@@ -1,0 +1,47 @@
+package in.co.rays.proj4.test;
+
+import java.sql.Time;
+import java.sql.Timestamp;
+import java.util.Date;
+
+import in.co.rays.proj4.bean.RoleBean;
+import in.co.rays.proj4.model.RoleModel;
+
+public class TestRoleModel {
+	
+	public static void main(String[] args) throws Exception {
+
+		//testNextPk();
+		testAdd();
+//		testDelete();
+//		testUpdate();
+//		testFindByPk();
+//		testFindByName();
+		//testSearch();
+
+	}
+	private static void testNextPk() {
+
+		RoleModel model = new RoleModel();
+
+		int i = model.nextPk();
+
+		System.out.println("nexPk is: " + i);
+	}
+	
+	public static void testAdd() throws Exception {
+
+		RoleBean bean = new RoleBean();
+		bean.setName("kiosk");
+		bean.setDescription("kiosk");
+		bean.setCreatedBy("admin@gmail.com");
+		bean.setModifiedBy("admin@gmail.com");
+		bean.setCreatedDatetime(new Timestamp(new Date().getTime()));
+		bean.setModifiedDatetime(new Timestamp(new Date().getTime()));
+
+		RoleModel model = new RoleModel();
+
+		model.add(bean);
+
+	}
+}

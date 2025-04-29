@@ -4,7 +4,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
-import exception.ApplicationException;
+
+import in.co.rays.proj4.exception.ApplicationException;
 
 public class JDBCDataSource {
 	

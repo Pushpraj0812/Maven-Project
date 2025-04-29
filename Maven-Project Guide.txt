@@ -107,3 +107,21 @@
 
 =========================================================================================================
 
+=> Insert following row in st_role table
+
+  -> admin  admin admin admin
+  -> student student admin admin 
+  -> faculty faculty admin admin 
+  -> kiosk kiosk admin admin
+
+ =========================================================================================================
+
+=> Create add, update, delete, findbyPK, search, nextPK method for 
+
+  -> RoleModel ( make findbyname also )
+  -> StudentModel ( make findbycollageid also )
+  -> UserModel (make findbyroleid also )
+  -> CollageModel ( make findbycollagename also )
+
+ =========================================================================================================
+

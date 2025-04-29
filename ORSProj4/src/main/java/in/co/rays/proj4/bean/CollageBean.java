@@ -7,6 +7,7 @@ public class CollageBean extends BaseBean{
 	private String state;
 	private String city;
 	private String phone_no;
+	
 	public String getName() {
 		return name;
 	}

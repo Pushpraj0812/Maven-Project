@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 
 public class BaseBean {
 	
+	//common attributes of all database tables.
 	protected long id;
 	protected String createdBy;
 	protected String modifiedBy;

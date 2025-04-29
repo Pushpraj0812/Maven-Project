@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;exception&apos; to &apos;in.co.rays.proj4.exception&apos;&#x0D;&#x0A;- Original project: &apos;ORSProj4&apos;&#x0D;&#x0A;- Original element: &apos;ORSProj4/src/main/java/exception&apos;&#x0D;&#x0A;- Renamed element: &apos;ORSProj4/src/main/java/in.co.rays.proj4.exception&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;exception&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;exception" name="in.co.rays.proj4.exception" qualified="false" references="true" stamp="1745759791324" textual="false" version="1.0"/>
+</session>

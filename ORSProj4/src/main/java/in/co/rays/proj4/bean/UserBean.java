@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class UserBean extends BaseBean{
 	
-	private String fristName;
+	private String firstName;
 	private String lastName;
 	private String login;
 	private String password;
@@ -12,11 +12,12 @@ public class UserBean extends BaseBean{
 	private String mobileNo;
 	private long roleId;
 	private String gender;
-	public String getFristName() {
-		return fristName;
+	
+	public String getFirstName() {
+		return getFirstName();
 	}
-	public void setFristName(String fristName) {
-		this.fristName = fristName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	public String getLastName() {
 		return lastName;
