@@ -5,11 +5,9 @@
     <fullyQualifiedTypeName name="com.mchange.v2.c3p0.ComboPooledDataSource"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="exception.ApplicationException"/>
-    <fullyQualifiedTypeName name="in.co.rays.proj4.bean.BaseBean"/>
     <fullyQualifiedTypeName name="in.co.rays.proj4.model.RoleModel"/>
     <fullyQualifiedTypeName name="in.co.rays.proj4.model.UserModel"/>
     <fullyQualifiedTypeName name="in.co.rays.proj4.model.CollageModel"/>
-    <fullyQualifiedTypeName name="in.co.rays.proj4.model.CollegeModel"/>
     <fullyQualifiedTypeName name="in.co.rays.proj4.model.StudentModel"/>
     <fullyQualifiedTypeName name="in.co.rays.proj4.model.MarksheetModel"/>
     <fullyQualifiedTypeName name="in.co.rays.proj4.model.CourseModel"/>
@@ -20,15 +18,21 @@
     <fullyQualifiedTypeName name="in.co.rays.proj4.exception.DuplicateRecordException"/>
     <fullyQualifiedTypeName name="in.co.rays.proj4.exception.ApplicationException"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="in.co.rays.proj4.bean.RoleBean"/>
     <fullyQualifiedTypeName name="java.sql.Time"/>
     <fullyQualifiedTypeName name="java.sql.Timestamp"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="in.co.rays.proj4.util.JDBCDataSource"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.bean.RoleBean"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.bean.CollageBean"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.test.TestCollageModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.bean.BaseBean"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.model.CollegeModel"/>
+    <fullyQualifiedTypeName name="in.co.rays.proj4.bean.CollegeBean"/>
 </qualifiedTypeNameHistroy>

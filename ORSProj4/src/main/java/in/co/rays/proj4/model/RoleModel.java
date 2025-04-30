@@ -178,7 +178,7 @@ public class RoleModel {
 		return bean;
 	}
 	
-	public List search(RoleBean bean, int pageNo, int pageSize) throws Exception {
+	public List search(RoleBean bean) throws Exception {
 
 		Connection conn = JDBCDataSource.getConnection();
 
@@ -188,11 +188,6 @@ public class RoleModel {
 			if (bean.getName() != null && bean.getName().length() > 0) {
 				sql.append(" and first_name like '" + bean.getName() + "%'");
 			}
-		}
-
-		if (pageSize > 0) {
-			pageNo = (pageNo - 1) * pageSize;
-			sql.append(" limit " + pageNo + ", " + pageSize);
 		}
 
 		System.out.println("sql ==>> " + sql.toString());

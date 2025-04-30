@@ -9,10 +9,6 @@ import in.co.rays.proj4.exception.ApplicationException;
 
 public class JDBCDataSource {
 	
-	/**
-	 * JDBC Database connection pool ( DCP )
-	 */
-
 	private JDBCDataSource() { 
 	}
 

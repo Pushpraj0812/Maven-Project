@@ -1367,3 +1367,142 @@ java.io.StreamCorruptedException: invalid stream header: 00000000
 2025-04-30 00:01:33,203 [Worker-4: Launching TestRoleModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2025-04-30 00:01:33,205 [Worker-4: Launching TestRoleModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2025-04-30 00:01:33,205 [Worker-4: Launching TestRoleModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 18:37:46,894 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-04-30 18:37:49,764 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 18:37:49,786 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 18:37:49,797 [Worker-9: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 18:37:49,798 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 18:54:30,826 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 18:54:30,843 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 18:54:30,845 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 18:54:30,846 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:00:17,878 [Worker-8: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:00:17,882 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:00:17,885 [Worker-8: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:00:17,886 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:00:46,507 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:00:46,511 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:00:46,512 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:00:46,514 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:07:42,483 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:07:42,486 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:07:42,490 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:07:42,491 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:08:49,739 [Worker-12: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:08:49,743 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:08:49,745 [Worker-12: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:08:49,746 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:10:20,995 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:10:20,999 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:10:21,003 [Worker-2: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:10:21,005 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:10:31,826 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:10:31,829 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:10:31,832 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:10:31,833 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:15:28,568 [Worker-8: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:15:28,571 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:15:28,573 [Worker-8: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:15:28,574 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:17:44,757 [Worker-0: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:17:44,761 [Worker-0: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:17:44,763 [Worker-0: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:17:44,764 [Worker-0: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:19:48,346 [Worker-8: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:19:48,348 [Worker-8: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:19:48,350 [Worker-8: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:19:48,351 [Worker-8: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:21:33,190 [Worker-19: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:21:33,195 [Worker-19: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:21:33,197 [Worker-19: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:21:33,198 [Worker-19: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:22:58,908 [Worker-15: Launching TestRoleModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:22:58,910 [Worker-15: Launching TestRoleModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:22:58,912 [Worker-15: Launching TestRoleModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:22:58,912 [Worker-15: Launching TestRoleModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:23:15,730 [Worker-18: Launching TestRoleModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:23:15,732 [Worker-18: Launching TestRoleModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:23:15,734 [Worker-18: Launching TestRoleModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:23:15,735 [Worker-18: Launching TestRoleModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:24:33,333 [Worker-16: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:24:33,335 [Worker-16: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:24:33,337 [Worker-16: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:24:33,338 [Worker-16: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:33:14,343 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:33:14,359 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:33:14,359 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:33:14,359 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 19:33:17,418 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:33:17,432 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 19:33:17,433 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 19:33:17,435 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:01:42,909 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:01:42,976 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:01:42,999 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:01:43,002 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:02:08,305 [Worker-12: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-04-30 20:03:10,179 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:03:10,199 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:03:10,202 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:03:10,203 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:04:42,865 [Worker-7: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:04:42,867 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:04:42,869 [Worker-7: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:04:42,870 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:04:59,584 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:04:59,587 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:04:59,589 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:04:59,590 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:11:52,259 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:11:52,259 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:11:52,259 [Worker-1: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:11:52,259 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:12:38,173 [Worker-9: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:12:38,177 [Worker-9: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:12:38,180 [Worker-9: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:12:38,181 [Worker-9: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:16:34,827 [Worker-10: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:16:34,827 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:16:34,827 [Worker-10: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:16:34,827 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:19:35,466 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:19:35,468 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:19:35,470 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:19:35,472 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:20:06,668 [Worker-9: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:20:06,668 [Worker-9: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:20:06,668 [Worker-9: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:20:06,668 [Worker-9: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:24:40,150 [Worker-17: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:24:40,152 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:24:40,154 [Worker-17: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:24:40,154 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:28:44,863 [Worker-18: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:28:44,865 [Worker-18: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:28:44,867 [Worker-18: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:28:44,869 [Worker-18: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:29:59,582 [Worker-19: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:29:59,582 [Worker-19: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:29:59,587 [Worker-19: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:29:59,587 [Worker-19: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:30:13,502 [Worker-17: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:30:13,502 [Worker-17: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:30:13,507 [Worker-17: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:30:13,509 [Worker-17: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 20:31:26,454 [Worker-20: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:31:26,456 [Worker-20: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 20:31:26,458 [Worker-20: Launching TestCollageModel] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 20:31:26,458 [Worker-20: Launching TestCollageModel] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 23:07:11,439 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-04-30 23:07:15,814 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 23:07:15,829 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 23:07:15,843 [Worker-0: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 23:07:15,845 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-04-30 23:11:15,935 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 23:11:15,949 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-04-30 23:11:15,949 [Worker-4: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-30 23:11:15,949 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources
+2025-05-01 00:05:10,509 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-05-01 00:05:10,518 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-05-01 00:05:10,520 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-05-01 00:05:10,521 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Maven_Project\ORSProj4\src\test\resources

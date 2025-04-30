@@ -18,9 +18,9 @@ public class TestRoleModel {
 	public static void main(String[] args) throws Exception {
 
 		//testNextPk();
-		testAdd();
+		//testAdd();
 		//testDelete();
-		//testUpdate();
+		testUpdate();
       	//testFindByPk();
 		//testFindByName();
 		//testSearch();
@@ -94,7 +94,7 @@ public class TestRoleModel {
 
 		RoleModel model = new RoleModel();
 
-		List list = model.search(bean, 1, 10);
+		List list = model.search(bean);
 
 		Iterator it = list.iterator();
 
