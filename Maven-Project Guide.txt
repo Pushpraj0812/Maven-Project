@@ -109,10 +109,10 @@
 
 => Insert following row in st_role table
 
-  -> admin  admin admin admin
-  -> student student admin admin 
-  -> faculty faculty admin admin 
-  -> kiosk kiosk admin admin
+  -> admin  
+  -> student  
+  -> faculty  
+  -> kiosk 
 
  =========================================================================================================
 
@@ -125,3 +125,20 @@
 
  =========================================================================================================
 
+=> util package contain utility classes
+  
+  utility classes are the classes that are reusable.
+
+  #make utility classes in util package
+
+   -> DataUtility ( To format data from format to another  )
+   -> DataValidator ( To check whether the formatted data is valid or not )
+   -> EmailBuilder 
+   -> EmailMessage
+   -> EmailUtility
+   -> HTMLUtility ( To provide HTML contains )
+   -> PropertyBuilder ( To read property values from application properties file )
+   -> ServletUtility ( To provide utility operation for servlet container )
+   -> JDBCDataSource ( It is a data connection pool )
+
+=========================================================================================================
