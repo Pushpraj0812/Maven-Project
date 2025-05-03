@@ -8,6 +8,7 @@ public class MarksheetBean extends BaseBean{
 	private int physics;
 	private int chemistry;
 	private int maths;
+	
 	public String getRollNo() {
 		return rollNo;
 	}

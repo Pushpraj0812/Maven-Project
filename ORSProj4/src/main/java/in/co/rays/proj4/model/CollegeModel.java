@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import in.co.rays.proj4.bean.CollegeBean;
-import in.co.rays.proj4.bean.RoleBean;
 import in.co.rays.proj4.util.JDBCDataSource;
 
 public class CollegeModel {
@@ -203,5 +202,27 @@ public class CollegeModel {
 		}
 		JDBCDataSource.closeConnection(conn);
 		return bean;
+	}
+	
+	public void delete(long id) throws Exception {
+
+		Connection conn = null;
+
+		try {
+
+			conn = JDBCDataSource.getConnection();
+			conn.setAutoCommit(false);
+			PreparedStatement pstmt = conn.prepareStatement("delete from st_college where id = ?");
+			pstmt.setLong(1, id);
+
+			int i = pstmt.executeUpdate();
+			conn.commit();
+
+			JDBCDataSource.closeConnection(conn);
+			System.out.println("data deleted => " + i);
+
+		} catch (Exception e) {
+			JDBCDataSource.trnRollback(conn);
+		}
 	}
 }

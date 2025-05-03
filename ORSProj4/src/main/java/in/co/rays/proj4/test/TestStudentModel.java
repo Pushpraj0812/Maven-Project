@@ -15,10 +15,12 @@ public class TestStudentModel {
 	public static void main(String[] args) throws Exception {
 
 		//testNextPk();
-		//testadd();
+		testadd();
 		//testUpdate();
 		//testFindByPK();
-		testSearch();
+		//testSearch();
+		//testFindByEmail();
+		//testDelete();
 
 	}
 	private static void testNextPk() {
@@ -105,6 +107,8 @@ public class TestStudentModel {
 		
 		StudentModel model = new StudentModel();
 		
+		bean.setFirstName("Pushpraj");
+		
 		List list = model.search(bean);
 		
 		Iterator it = list.iterator();
@@ -126,5 +130,34 @@ public class TestStudentModel {
 			System.out.print("\t" + bean.getCreatedDatetime());
 			System.out.print("\t" + bean.getModifiedDatetime());
 		}
+	}
+	
+	private static void testFindByEmail() throws Exception {
+		
+		StudentModel model = new StudentModel();
+		StudentBean bean = model.findbyemail("pushpraj0812@gmail.com");
+		
+		if(bean != null) {
+			System.out.print(bean.getId());
+			System.out.print("\t" + bean.getFirstName());
+			System.out.print("\t" + bean.getLastName());
+			System.out.print("\t" + bean.getDob());
+			System.out.print("\t" + bean.getGender());
+			System.out.print("\t" + bean.getGender());
+			System.out.print("\t" + bean.getMobileNo());
+			System.out.print("\t" + bean.getEmail());
+			System.out.print("\t" + bean.getCollageID());
+			System.out.print("\t" + bean.getCollageName());
+			System.out.print("\t" + bean.getCreatedBy());
+			System.out.print("\t" + bean.getModifiedBy());
+			System.out.print("\t" + bean.getCreatedDatetime());
+			System.out.print("\t" + bean.getModifiedDatetime());
+		}
+	}
+	
+	private static void testDelete() throws Exception {
+		
+		StudentModel model = new StudentModel();
+		model.delete(1);
 	}
 }

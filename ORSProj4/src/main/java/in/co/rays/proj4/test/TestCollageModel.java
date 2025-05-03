@@ -20,6 +20,7 @@ public class TestCollageModel {
 		//testFindByName();
 		//testSearch();
 		testFindByPK();
+		//testDelete();
 
 	}
 	private static void testNextPk() {
@@ -128,5 +129,10 @@ public class TestCollageModel {
 			System.out.print("\t" + bean.getCreatedDatetime());
 			System.out.print("\t" + bean.getModifiedDatetime());
 		}
+	}
+	
+	public static void testDelete() throws Exception {
+		CollegeModel model = new CollegeModel();
+		model.delete(1);
 	}
 }

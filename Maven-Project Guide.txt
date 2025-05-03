@@ -6,7 +6,7 @@
 
   Step 3-> Give your package a name in Group-id and name your project in Architect id, click finish.
 
-=========================================================================================================
+===================================================================================================================
 
 # Add dependencies in pom.xml file ( pom = project object model )
 
@@ -22,7 +22,7 @@
   1) <maven.compiler.target>11</maven.compiler.target>	
   2) <maven.compiler.source>11</maven.compiler.source>
 
-=========================================================================================================
+===================================================================================================================
 
 # update the project
  
@@ -31,7 +31,7 @@
 # goto build path -> configure build path -> libraries -> double click on ( JRE System libraries ) -> 
   workspace default
 
-=========================================================================================================
+===================================================================================================================
 
 # welcome file
 
@@ -42,12 +42,14 @@
   </welcome-file-list>
  *
 
-=========================================================================================================
+===================================================================================================================
 
 # Add server in your project
 
-  Right click on project -> run as server -> browse for server ( location for your server ) -> select your server -> click finish 
-=========================================================================================================
+  Right click on project -> run as server -> browse for server ( location for your server ) -> 
+  -> select your server -> click finish 
+
+===================================================================================================================
 
 # Create packages 
 
@@ -60,7 +62,7 @@
   5) in.co.rays.proj4.test
   6) in.co.rays.proj4.exception
 
-=========================================================================================================
+===================================================================================================================
 
 # Create properties file 
 
@@ -68,7 +70,7 @@
 
   1) in.co.rays.proj4.bundle ( file name - system.properties )
 
-=========================================================================================================
+===================================================================================================================
 
 # Create folder 
 
@@ -77,7 +79,7 @@
   1) image
   2) jsp
 
-=========================================================================================================
+===================================================================================================================
 
 # Design patter used in project-04
 
@@ -89,7 +91,7 @@
 
 4. Front controller design pattern
 
-=========================================================================================================
+===================================================================================================================
 
 # Create classes in packages
 
@@ -105,7 +107,7 @@
   => Create model classes for all database.
   => Create testmodel classes for all database.
 
-=========================================================================================================
+===================================================================================================================
 
 => Insert following row in st_role table
 
@@ -114,16 +116,21 @@
   -> faculty  
   -> kiosk 
 
- =========================================================================================================
+ ===================================================================================================================
 
-=> Create nextPK, add, update, delete, findbyPK, search method for 
+=> Create nextPK, findbyPK, add, update, delete, search methods and also create some additional methods as mentioned  
 
-  -> RoleModel ( make findbyname also )
-  -> StudentModel ( make findbycollageid also )
-  -> UserModel (make findbyroleid also )
-  -> CollageModel ( make findbycollagename also )
+  -> CollegeModel ( make findByName )
+  -> CourseModel ( make findByName )
+  -> FacultyModel ( make findByCollegeID )
+  -> MarksheetModel ( make findByStudentID )
+  -> RoleModel ( make findByName )
+  -> StudentModel ( make findByEmail )
+  -> SubjectModel ( make findByCourseID )
+  -> TimeTableModel ( make findBySubjectID )
+  -> UserModel (make findByRoleID )
 
- =========================================================================================================
+ ===================================================================================================================
 
 => util package contain utility classes
   
@@ -141,4 +148,4 @@
    -> ServletUtility ( To provide utility operation for servlet container )
    -> JDBCDataSource ( It is a data connection pool )
 
-=========================================================================================================
+===================================================================================================================

@@ -1,6 +1,6 @@
 package in.co.rays.proj4.bean;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class UserBean extends BaseBean{
 	
@@ -14,7 +14,7 @@ public class UserBean extends BaseBean{
 	private String gender;
 	
 	public String getFirstName() {
-		return getFirstName();
+		return firstName;
 	}
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
