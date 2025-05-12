@@ -130,7 +130,9 @@
   -> TimeTableModel ( make findBySubjectID )
   -> UserModel (make findByRoleID )
 
- ===================================================================================================================
+=> Create test classes for all the models in "MODEL PACKAGE"
+
+====================================================================================================================
 
 => util package contain utility classes
   
@@ -147,5 +149,38 @@
    -> PropertyBuilder ( To read property values from application properties file )
    -> ServletUtility ( To provide utility operation for servlet container )
    -> JDBCDataSource ( It is a data connection pool )
+
+===================================================================================================================
+
+=> Insert data in your tables keeping in mind that all the tables are interconnected 
+
+   -> College_id ( st_college ) is connected to :- st_faculty and st_student
+   -> Course_id ( st_course ) is connected to :- st_faculty, st_subject and st_timetable
+   -> Student_id ( st_student ) is connected to :- st_marksheet 
+   -> Subject_id ( st_subject ) is connect to :- st_faculty
+
+* Make sure to make changes in model classes too
+===================================================================================================================
+
+=> Add images in to src/main/webapp/images 
+
+*All the images you are going to use in your project will be in this folder 
+===================================================================================================================
+
+=> Make the following jsp in src/main/webapp/jsp 
+
+   -> Header.jsp
+   -> Footer.jsp
+   -> LoginView.jsp
+   -> UserRegistraionView.jsp
+   -> Welcome.jsp
+
+=> Make controller classes in src/main/java/in/co/rays/proj4/controller
+
+  -> ORSView ( It contains all the common )
+  -> BaseCtl ( It contains all the common Constraints, Operations, and service method)
+  -> LoginCtl
+  -> UserRegistrationctl
+  -> WelcomeCtl
 
 ===================================================================================================================

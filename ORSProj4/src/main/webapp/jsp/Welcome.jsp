@@ -1,6 +1,6 @@
 <%@page import="in.co.rays.proj4.controller.ORSView"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +8,7 @@
 <title>Welcome Page</title>
 </head>
 <body>
-<form action="<%=ORSView.WELCOME_CTL%>">
+	<form action="<%=ORSView.WELCOME_CTL%>">
 		<%@ include file="Header.jsp"%>
 		<br>
 		<h1 align="Center">

@@ -13,8 +13,9 @@ import in.co.rays.proj4.util.DataUtility;
 import in.co.rays.proj4.util.DataValidator;
 import in.co.rays.proj4.util.ServletUtility;
 
-public abstract class BaseCtl extends HttpServlet{
-	
+public abstract class BaseCtl extends HttpServlet {
+
+	// Generic Constraints are Buttons
 	public static final String OP_SAVE = "Save";
 	public static final String OP_CANCEL = "Cancel";
 	public static final String OP_DELETE = "Delete";
@@ -30,6 +31,7 @@ public abstract class BaseCtl extends HttpServlet{
 	public static final String OP_RESET = "Reset";
 	public static final String OP_UPDATE = "update";
 
+	// Generic Operations are Common Method
 	/**
 	 * Success message key constant
 	 */
@@ -113,6 +115,8 @@ public abstract class BaseCtl extends HttpServlet{
 		return dto;
 	}
 
+	// Service Method is overridden and will always run, it will provide generic
+	// workflow
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
