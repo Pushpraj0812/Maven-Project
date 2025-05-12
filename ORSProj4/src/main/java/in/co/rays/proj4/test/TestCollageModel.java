@@ -18,8 +18,8 @@ public class TestCollageModel {
 		//testadd();
 		//testUpdate();
 		//testFindByName();
-		//testSearch();
-		testFindByPK();
+		testSearch();
+		//testFindByPK();
 		//testDelete();
 
 	}
@@ -36,8 +36,8 @@ public class TestCollageModel {
 		
 		CollegeBean bean = new CollegeBean();
 		
-		bean.setName("Pushpraj");
-		bean.setAddress("Indore");
+		bean.setName("Rays");
+		bean.setAddress("Jaora Copound");
 		bean.setState("MP");
 		bean.setCity("Indore");
 		bean.setPhone_no("8718948410");
@@ -54,7 +54,7 @@ public class TestCollageModel {
 
 		CollegeBean bean = new CollegeBean();
 		bean.setId(1);
-		bean.setName("Pushpraj");
+		bean.setName("Rays");
 		bean.setAddress("Pipliyhana");
 		bean.setState("MP");
 		bean.setCity("Indore");
@@ -93,7 +93,7 @@ public class TestCollageModel {
 
 		CollegeModel model = new CollegeModel();
 
-		List list = model.search(bean);
+		List list = model.search(bean, 1,5);
 
 		Iterator it = list.iterator();
 

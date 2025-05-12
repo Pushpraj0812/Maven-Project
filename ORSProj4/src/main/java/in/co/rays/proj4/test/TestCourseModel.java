@@ -20,9 +20,9 @@ public class TestCourseModel {
 		// testFindByPK();
 		// testadd();
 		//testUpdate();
-		//testSearch();
+		testSearch();
 		//testFindByName();
-		testDelete();
+		//testDelete();
 
 	}
 
@@ -91,7 +91,7 @@ public class TestCourseModel {
 		CourseModel model = new CourseModel();
 		CourseBean bean = new CourseBean();
 
-		List list = model.search(bean);
+		List list = model.search(bean, 1,5);
 
 		Iterator it = list.iterator();
 		

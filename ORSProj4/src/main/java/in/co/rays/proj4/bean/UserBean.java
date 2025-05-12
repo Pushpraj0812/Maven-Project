@@ -61,4 +61,14 @@ public class UserBean extends BaseBean{
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+	@Override
+	public String getkey() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public String getValue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

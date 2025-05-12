@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import in.co.rays.proj4.bean.MarksheetBean;
+import in.co.rays.proj4.bean.StudentBean;
 import in.co.rays.proj4.util.JDBCDataSource;
 
 public class MarksheetModel {
@@ -40,7 +41,7 @@ public class MarksheetModel {
 		Connection conn = null;
 
 		int pk = nextPK();
-
+		
 		try {
 			conn = JDBCDataSource.getConnection();
 
@@ -141,7 +142,7 @@ public class MarksheetModel {
 		}
 	}
 
-	public List search(MarksheetBean bean) throws Exception {
+	public List search(MarksheetBean bean, int pageNo, int pageSize) throws Exception {
 
 		Connection conn = JDBCDataSource.getConnection();
 
@@ -152,6 +153,11 @@ public class MarksheetModel {
 			if (bean.getName() != null && bean.getName().length() > 0) {
 				sql.append(" and name like '" + bean.getName() + "%'");
 			}
+		}
+		
+		if (pageSize > 0) {
+			pageNo = (pageNo - 1) * pageSize;
+			sql.append(" limit " + pageNo + "," + pageSize);
 		}
 
 		System.out.println("sql ==>> " + sql.toString());

@@ -38,4 +38,14 @@ public class CollegeBean extends BaseBean{
 	public void setPhone_no(String phone_no) {
 		this.phone_no = phone_no;
 	}
+	@Override
+	public String getkey() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public String getValue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

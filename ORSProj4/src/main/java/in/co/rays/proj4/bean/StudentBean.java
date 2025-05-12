@@ -76,4 +76,16 @@ public class StudentBean extends BaseBean {
 	public void setCollageName(String collageName) {
 		this.collageName = collageName;
 	}
+
+	@Override
+	public String getkey() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getValue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

@@ -8,7 +8,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import in.co.rays.proj4.bean.CollegeBean;
 import in.co.rays.proj4.bean.StudentBean;
+import in.co.rays.proj4.exception.ApplicationException;
+import in.co.rays.proj4.exception.DuplicateRecordException;
 import in.co.rays.proj4.util.JDBCDataSource;
 
 public class StudentModel {
@@ -40,6 +43,17 @@ public class StudentModel {
 	public void add(StudentBean bean) throws Exception {
 
 		Connection conn = null;
+		
+		CollegeModel cModel = new CollegeModel();
+		CollegeBean collegeBean = cModel.findByPk(bean.getCollageID());
+
+		bean.setCollageName(collegeBean.getName());
+
+		StudentBean duplicateName = findbyemail(bean.getEmail());
+		
+		if (duplicateName != null) {
+			throw new DuplicateRecordException("Email already exists");
+		}
 
 		int pk = nextPK();
 
@@ -113,6 +127,16 @@ public class StudentModel {
 	public void update(StudentBean bean) throws Exception {
 
 		Connection conn = null;
+		
+		StudentBean beanExist = findbyemail(bean.getEmail());
+
+		if (beanExist != null && beanExist.getId() != bean.getId()) {
+			throw new DuplicateRecordException("Email Id is already exist");
+
+		}
+		CollegeModel cModel = new CollegeModel();
+		CollegeBean collegeBean = cModel.findByPk(bean.getCollageID());
+		bean.setCollageName(collegeBean.getName());
 
 		try {
 
@@ -149,19 +173,92 @@ public class StudentModel {
 			JDBCDataSource.trnRollback(conn);
 		}
 	}
+	
+	public List list(int pageNo, int pageSize) throws ApplicationException {
+		ArrayList list = new ArrayList();
+		StringBuffer sql = new StringBuffer("select * from st_student");
 
-	public List search(StudentBean bean) throws Exception {
+		if (pageSize > 0) {
+			pageNo = (pageNo - 1) * pageSize;
+			sql.append(" limit " + pageNo + "," + pageSize);
+
+		}
+
+		Connection conn = null;
+
+		try {
+			conn = JDBCDataSource.getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(sql.toString());
+			ResultSet rs = pstmt.executeQuery();
+			while (rs.next()) {
+				StudentBean bean = new StudentBean();
+				bean.setId(rs.getLong(1));
+				bean.setCollageID(rs.getLong(2));
+				bean.setCollageName(rs.getString(3));
+				bean.setFirstName(rs.getString(4));
+				bean.setLastName(rs.getString(5));
+				bean.setDob(rs.getDate(6));
+				bean.setMobileNo(rs.getString(7));
+				bean.setEmail(rs.getString(8));
+				bean.setCreatedBy(rs.getString(9));
+				bean.setModifiedBy(rs.getString(10));
+				bean.setCreatedDatetime(rs.getTimestamp(11));
+				bean.setModifiedDatetime(rs.getTimestamp(12));
+				list.add(bean);
+			}
+			rs.close();
+		} catch (Exception e) {
+			throw new ApplicationException("Exception : Exception in getting list of Student");
+		} finally {
+			JDBCDataSource.closeConnection(conn);
+		}
+		return list;
+	}
+	
+	public List search(StudentBean bean, int pageNo, int pageSize) throws Exception {
 
 		Connection conn = JDBCDataSource.getConnection();
 
 		StringBuffer sql = new StringBuffer("select * from st_student where 1=1");
 
 		if (bean != null) {
-
+			if (bean.getId() > 0) {
+				sql.append(" AND id = " + bean.getId());
+			}
 			if (bean.getFirstName() != null && bean.getFirstName().length() > 0) {
-				sql.append(" and first_name like '" + bean.getFirstName() + "%'");
+				sql.append(" AND FIRST_NAME like '" + bean.getFirstName() + "%'");
+			}
+			if (bean.getLastName() != null && bean.getLastName().length() > 0) {
+				sql.append(" AND LAST_NAME like '" + bean.getLastName() + "%'");
+			}
+			if (bean.getDob() != null && bean.getDob().getDate() > 0) {
+				sql.append(" AND DOB = " + bean.getDob());
+			}
+			if (bean.getMobileNo() != null && bean.getMobileNo().length() > 0) {
+				sql.append(" AND MOBILE_NO like '" + bean.getMobileNo() + "%'");
+			}
+			if (bean.getEmail() != null && bean.getEmail().length() > 0) {
+				sql.append(" AND EMAIL_ID like '" + bean.getEmail() + "%'");
+			}
+			if (bean.getCollageName() != null && bean.getCollageName().length() > 0) {
+				sql.append(" AND COLLEGE_NAME = '" + bean.getCollageName() + "%'");
+			}
+			if (bean.getCollageName() != null && bean.getCollageName().length() > 0) {
+				sql.append(" AND COLLEGE_NAME = '" + bean.getCollageName() + "%'");
+			}
+			if (bean.getCollageID() > 0) {
+				sql.append(" AND COLLEGE_ID = '" + bean.getCollageID() + "%'");
 			}
 		}
+
+		if (pageSize > 0) {
+
+			pageNo = (pageNo - 1) * pageSize;
+
+			sql.append(" Limit " + pageNo + ", " + pageSize);
+			// sql.append(" limit " + pageNo + "," + pageSize);
+		}
+
 
 		System.out.println("sql ==>> " + sql.toString());
 

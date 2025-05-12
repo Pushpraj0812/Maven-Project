@@ -115,7 +115,7 @@ public class TestFacultyModel {
 
 		bean.setFirstName("Shahid");
 
-		List list = model.search(bean);
+		List list = model.search(bean, 1,5);
 
 		Iterator it = list.iterator();
 

@@ -6,8 +6,11 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import in.co.rays.proj4.bean.CourseBean;
 import in.co.rays.proj4.bean.StudentBean;
 import in.co.rays.proj4.bean.SubjectBean;
+import in.co.rays.proj4.exception.ApplicationException;
+import in.co.rays.proj4.exception.DuplicateRecordException;
 import in.co.rays.proj4.util.JDBCDataSource;
 
 public class SubjectModel {
@@ -39,6 +42,16 @@ public class SubjectModel {
 	public void add(SubjectBean bean) throws Exception {
 
 		Connection conn = null;
+		
+		CourseModel cModel = new CourseModel();
+		CourseBean CourseBean = cModel.findbypk(bean.getCourseId());
+		bean.setCourseName(CourseBean.getName());
+
+		SubjectBean duplicateCourse = findByCourseId(bean.getCourseId());
+
+		if (duplicateCourse != null) {
+			throw new DuplicateRecordException("Subject already exists");
+		}
 
 		int pk = nextPK();
 
@@ -135,17 +148,35 @@ public class SubjectModel {
 		}
 	}
 
-	public List search(SubjectBean bean) throws Exception {
+	public List search(SubjectBean bean, int pageNo, int pageSize) throws Exception {
 
 		Connection conn = JDBCDataSource.getConnection();
 
 		StringBuffer sql = new StringBuffer("select * from st_subject where 1=1");
 
 		if (bean != null) {
-
-			if (bean.getName() != null && bean.getName().length() > 0) {
-				sql.append(" and name like '" + bean.getName() + "%'");
+			if (bean.getId() > 0) {
+				sql.append(" AND ID = " + bean.getId());
+				System.out.println("NOT null");
 			}
+			if (bean.getName() != null && bean.getName().length() > 0) {
+				sql.append(" AND Subject_Name like '" + bean.getName() + "%'");
+			}
+
+			if (bean.getDescription() != null && bean.getDescription().length() > 0) {
+				sql.append(" AND Description like '" + bean.getDescription() + "%'");
+			}
+			if (bean.getCourseId() > 0) {
+				sql.append(" AND Course_id = " + bean.getCourseId());
+			}
+			if (bean.getCourseName() != null && bean.getCourseName().length() > 0) {
+				sql.append(" AND course_Name like '" + bean.getCourseName() + "%'");
+			}
+
+		}
+		if (pageSize > 0) {
+			pageNo = (pageNo - 1) * pageSize;
+			sql.append(" limit " + pageNo + "," + pageSize);
 		}
 
 		System.out.println("sql ==>> " + sql.toString());
@@ -174,13 +205,60 @@ public class SubjectModel {
 		return list;
 	}
 	
-	public SubjectBean findByCourseId(int id) throws Exception {
+	public List list(int pageNo, int pageSize) throws Exception {
+
+		List list = new ArrayList();
+
+		StringBuffer sql = new StringBuffer("select * from st_subject");
+
+		if (pageSize > 0) {
+			pageNo = (pageNo - 1) * pageSize;
+			sql.append(" limit " + pageNo + " ," + pageSize);
+		}
+
+		Connection conn = null;
+
+		try {
+			conn = JDBCDataSource.getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(sql.toString());
+
+			ResultSet rs = pstmt.executeQuery();
+			SubjectBean bean;
+			while (rs.next()) {
+				bean = new SubjectBean();
+
+				bean.setId(rs.getLong(1));
+				bean.setName(rs.getString(2));
+				bean.setDescription(rs.getString(3));
+				bean.setCourseId(rs.getLong(4));
+				bean.setCourseName(rs.getString(5));
+				bean.setCreatedBy(rs.getString(6));
+				bean.setModifiedBy(rs.getString(7));
+				bean.setCreatedDatetime(rs.getTimestamp(8));
+				bean.setModifiedDatetime(rs.getTimestamp(9));
+
+				list.add(bean);
+			}
+			rs.close();
+			pstmt.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new ApplicationException("Exception : Exception in getting list " + e.getMessage());
+
+		} finally {
+			JDBCDataSource.closeConnection(conn);
+		}
+		return list;
+	}
+	
+	public SubjectBean findByCourseId(long l) throws Exception {
 
 		Connection conn = JDBCDataSource.getConnection();
 
 		PreparedStatement pstmt = conn.prepareStatement("select * from st_subject where course_id = ?");
 
-		pstmt.setLong(1, id);
+		pstmt.setLong(1, l);
 
 		ResultSet rs = pstmt.executeQuery();
 

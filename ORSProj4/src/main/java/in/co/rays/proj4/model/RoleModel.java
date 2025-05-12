@@ -40,6 +40,11 @@ public class RoleModel {
 	public void add(RoleBean bean) throws Exception {
 
 		Connection conn = null;
+		
+		RoleBean existBean = findByName(bean.getName());
+		if (existBean != null) {
+			throw new DuplicateRecordException("role aready exist");
+		}
 
 		try {
 			int pk = nextPk();
