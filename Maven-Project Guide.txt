@@ -177,7 +177,7 @@
 
 => Make controller classes in src/main/java/in/co/rays/proj4/controller
 
-  -> ORSView ( It contains all the common )
+  -> ORSView ( It contains all the pathing for controller and jsp )
   -> BaseCtl ( It contains all the common Constraints, Operations, and service method)
   -> LoginCtl
   -> UserRegistrationctl
