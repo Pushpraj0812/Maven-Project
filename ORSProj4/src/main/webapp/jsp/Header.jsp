@@ -55,7 +55,7 @@
 		<tr>
 			<th></th>
 			<td colspan="2"><font style="font-size: 18px"> <%
- 	if (userBean.getRoleId() == RoleBean.ADMIN){
+ 	if (userBean.getRoleId() == RoleBean.ADMIN) {
  %> <a href="<%=ORSView.MARKSHEET_CTL%>">Add Marksheet</b></a> | <a
 					href="<%=ORSView.MARKSHEET_LIST_CTL%>">Marksheet List</b></a> | <a
 					href="<%=ORSView.USER_CTL%>">Add User</b></a> | <a

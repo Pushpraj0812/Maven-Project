@@ -15,10 +15,10 @@ public class TestCollageModel {
 	public static void main(String[] args) throws Exception {
 
 		//testNextPk();
-		//testadd();
+		testadd();
 		//testUpdate();
 		//testFindByName();
-		testSearch();
+		//testSearch();
 		//testFindByPK();
 		//testDelete();
 
@@ -36,8 +36,8 @@ public class TestCollageModel {
 		
 		CollegeBean bean = new CollegeBean();
 		
-		bean.setName("Rays");
-		bean.setAddress("Jaora Copound");
+		bean.setName("fsse");
+		bean.setAddress("Jaora ");
 		bean.setState("MP");
 		bean.setCity("Indore");
 		bean.setPhone_no("8718948410");
